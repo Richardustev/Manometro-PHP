@@ -1,0 +1,65 @@
+/*Fuentes*/
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&family=Roboto:wght@100;300&display=swap');
+/*Fuentes*/
+
+/*Codigo PC*/
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+header .head-title{
+    padding: 40px 0px;
+    padding-bottom: 20px;
+    text-align: center;
+    background-image: url(./imgs/main-wp.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+header .head-title h1{
+    color: #fff;
+    border-bottom: 3px #fff solid;
+    font-size: 50px;
+    font-family: 'Oswald', sans-serif;
+}
+
+nav{
+    padding: 0 10px;
+}
+
+main{
+    margin: auto;
+    padding: 10px;
+    width: 80%;
+}
+
+main .main-welcome{
+    padding: 20px 0 20px 0;
+    text-align: center;
+}
+
+main .main-welcome h2{
+    font-size: 40px;
+}
+
+main .wrapper{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+}
+
+main .wrapper .main-manometro-img{
+    margin: auto;
+}
+
+/*Codigo PC*/
+
+/*Codigo RESPONSIVE*/
+@media only screen and (max-width: 700px) { 
+    main .wrapper{
+        display: block;
+    }
+}
+/*Codigo RESPONSIVE*/

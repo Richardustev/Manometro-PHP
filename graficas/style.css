@@ -1,0 +1,105 @@
+/*Fuentes*/
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&family=Roboto:wght@100;300&display=swap');
+/*Fuentes*/
+
+/*Codigo PC*/
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+header .head-title{
+    padding: 40px 0px;
+    padding-bottom: 20px;
+    text-align: center;
+    background-image: url(../imgs/main-wp.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+header .head-title h1{
+    color: #fff;
+    border-bottom: 3px #fff solid;
+    font-size: 50px;
+    font-family: 'Oswald', sans-serif;
+}
+
+nav{
+    padding: 0 10px;
+}
+
+.registro-pozo-bg{
+    display: none;
+    background: rgba(0, 0, 0, 0.507);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 90;
+}
+
+.registro-pozo{
+    z-index: 100;
+    display: none;
+    background-color: #fff;
+    border-radius: 20px;
+    width: 40%;
+    font-weight: bold;
+    color: #000;
+    padding: 33px;
+    min-height: 300px;
+    border: 15px;
+    position: absolute;
+    left: 30%;
+    top: 30%;
+}
+
+.registro-pozo input[type=text]{
+    width: 100%;
+}
+
+.registro-pozo input[type=submit]{
+    border:none; 
+    border-radius: 5px; 
+    padding:6.5px 12px; 
+    text-decoration:none; 
+    cursor:pointer; margin:0; 
+    color:white; 
+    background-color:#198754;
+}
+
+main{
+    z-index: 0;
+    margin: auto;
+    padding: 10px;
+    width: 80%;
+}
+
+main .main-title{
+    padding: 20px 0 20px 0;
+}
+
+.alert{
+    padding: 1em;
+    color: #fff;
+    border-radius: 2px;
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+
+.alert.error{
+    background: #f2dede;
+    border: 1px solid #a94442;
+    color: #a94442;
+}
+/*Codigo PC*/
+
+/*Codigo RESPONSIVE*/
+@media only screen and (max-width: 700px) { 
+    .registro-pozo{
+        width: 90%;
+        left: 5%;
+        top: 10%;
+    }
+}
+/*Codigo RESPONSIVE*/
